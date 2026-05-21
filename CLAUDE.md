@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this project is
 
-A pure-static psychology assessment site ("心镜 / PsyMirror") that hosts 9 classic Chinese-language scales (MBTI 简/详尽, BFI-44, PHQ-9, GAD-7, SDS, SAS, Holland RIASEC, 4D Leadership). Each scale is a single JSON file describing questions, scoring rules, and authoritative interpretations; the front-end loads the JSON, renders the test, runs the scorer, and shows a result with an **optional** AI deep-analysis pass via the Anthropic API. No backend, no build step, no dependencies.
+A pure-static psychology assessment site ("心镜 / PsyMirror") that hosts 10 classic Chinese-language scales (MBTI 简/详尽, BFI-44, PHQ-9, GAD-7, SDS, SAS, Holland RIASEC, Gallup 34 talents, 4D Leadership). Each scale is a single JSON file describing questions, scoring rules, and authoritative interpretations; the front-end loads the JSON, renders the test, runs the scorer, and shows a result with an **optional** AI deep-analysis pass via the Anthropic API. No backend, no build step, no dependencies.
 
 ## Running it locally
 
@@ -43,7 +43,7 @@ The scoring engine `js/scorer.js` is **data-driven**: each scale declares `scori
 | `sum`                   | `single-score-ranges`   | PHQ-9, GAD-7             | option's `value` (numeric)         |
 | `sum-multiply`          | `single-score-ranges`   | SDS, SAS                 | option's `value`                   |
 | `dimension-mean`        | `per-dimension-ranges`  | BFI-44, 4D Leadership    | option's `value`                   |
-| `dimension-sum`         | `top-n-codes`           | Holland                  | option's `value`                   |
+| `dimension-sum`         | `top-n-codes`           | Holland, Gallup 34       | option's `value`                   |
 | `forced-choice-tally`   | `type-code`             | MBTI 简版 / 详尽版        | **option index** (not value)       |
 
 The last row is the wrinkle worth flagging: for forced-choice scales, `test-runner.js` stores the **chosen option's index** (so the scorer can look up `question.options[index].dimension`); for Likert scales it stores the option's numeric `value`. See `valueFor()` in `test-runner.js:111`.
@@ -59,6 +59,15 @@ MBTI 简版 uses only the base fields; MBTI 详尽版 opts into these extras (al
 - `motto` — single sentence rendered as an accent-bg blockquote near the bottom.
 
 All extras are optional — the renderer omits each section if its field is absent.
+
+### Optional fields on `top-n-codes` interpretations
+
+Holland uses the base fields (`letters[id].{summary, careers}` + `codes[XYZ]`); Gallup 34 opts into these extras when the "code" combinatorics aren't meaningful (C(34,5) is too many to enumerate):
+
+- `hideCodeSection: true` — skip the entire "你的兴趣代码: XYZ" section. Use when the concatenated top-N id string isn't a meaningful identifier.
+- `dimensionsSectionLabel` / `perLetterSectionLabel` — override the section headings (defaults: "六维兴趣分数" / "主要维度解读").
+- `domains: { <domain_id>: { name, themes: [<dim_id>...] } }` — when present, the bar chart is grouped under domain sub-headings, with each domain's themes sorted by score independently. Themes not listed in any domain are silently dropped from the chart, so cover all dims.
+- `letters[id].detail` (paragraph string) and `letters[id].watchout` (single line) — extend the per-theme card beyond `summary` + `careers`. Useful for richer profiles like Gallup talents that need both an upside narrative and a watch-out hint.
 
 ### Optional fields on `per-dimension-ranges` interpretations
 

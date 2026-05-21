@@ -87,6 +87,16 @@
       "featured": true
     },
     {
+      "id": "gallup",
+      "name": "盖洛普 34 才干识别 (优势发现版)",
+      "shortName": "Gallup 34",
+      "tagline": "找出你的前 5 项天然优势, 借鉴 34 才干主题框架自评 (非官方)",
+      "category": "career",
+      "questionCount": 102,
+      "estimatedMinutes": 22,
+      "featured": true
+    },
+    {
       "id": "4d",
       "name": "4D 领导力风格测评",
       "shortName": "4D Leadership",

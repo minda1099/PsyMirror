@@ -90,6 +90,25 @@
   - 龙立荣, 彭永新. *大学生职业自我效能感的初步研究.* 心理科学. 2001;24(2):205-208.
   - 凌文辁, 方俐洛. *职业兴趣的测量及其在职业指导中的应用.* 心理学动态. 2001;9(1):63-69.
 
+## 9. 盖洛普 34 才干识别 (优势发现版 / 非官方)
+
+- **理论框架**:
+  - Clifton DO, Nelson P. *Soar with Your Strengths.* Dell; 1992. — Don Clifton 提出「才干 (Talent)」与「优势 (Strength)」分离的核心理念。
+  - Buckingham M, Clifton DO. *Now, Discover Your Strengths.* Free Press; 2001. — 34 主导才干主题的早期框架。
+  - Rath T. *StrengthsFinder 2.0.* Gallup Press; 2007. — 34 主题的更新版描述, 也是面向大众最广为流传的版本。
+- **理论核心**: 每个人都拥有一组与生俱来的、可重复出现的思维 / 感受 / 行为模式 (即「才干」), 把才干 × 投入 × 练习 = 优势。个人发展的最高杠杆是放大已有的主导才干, 而不是花力气补短板。盖洛普的研究把这些天然才干归纳为 34 个主题, 进一步划入 4 大领域: 执行力 / 影响力 / 关系建立 / 战略思维。
+- **版权说明**:
+  - **CliftonStrengths®** 和 **StrengthsFinder®** 是 Gallup, Inc. 的注册商标。盖洛普官方测评由其独家持有, 包括题库 (177 道成对陈述句)、心理测量学算法 (Item Response Theory 加权)、以及 Top 5 排序方法。
+  - 本站测评 **不是** 盖洛普官方测评, 也 **不使用** 其题库与算法。本站测评由本项目自行编写 102 道李克特 5 级题, 每个才干主题对应 3 题, 仅借鉴公开可查的 34 主题名称与含义进行自评式探索。
+  - 如需获得用于职业发展、招聘评估等正式用途的报告, 请访问 https://www.gallup.com 购买官方测评 (CliftonStrengths)。
+- **使用建议**:
+  - 本测评适合用作自我探索的起点, **不适合** 用作招聘、晋升、咨询等正式决策依据。
+  - 「主导才干」不等于「能力」或「成就」。即便某个主题得分高, 也需要持续投入和刻意练习才能变成真正的优势。
+  - 低分主题不代表「你不行」, 只代表它不是你最自然的表达方式。
+- **延伸阅读**:
+  - 盖洛普官方 34 主题描述: https://www.gallup.com/cliftonstrengths/en/253715/34-cliftonstrengths-themes.aspx (英文)
+  - 关于 CliftonStrengths 心理测量学性质的独立评估: Asplund J, Lopez S, Hodges T, Harter J. *The Clifton StrengthsFinder 2.0 Technical Report: Development and Validation.* Gallup; 2014.
+
 ---
 
 ## 关于 AI 深度分析

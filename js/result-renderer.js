@@ -296,37 +296,62 @@ function typeBody(scale, result, interp) {
 }
 
 function topNBody(scale, result, interp) {
+  const cfg = scale.interpretation;
   const sorted = interp.sorted;
-  const allDims = sorted;
-  return `
-    <section class="result-section">
-      <h2>六维兴趣分数</h2>
-      ${allDims.map((d) => {
-        const pct = ((d.score - d.min) / (d.max - d.min)) * 100;
-        return `
-          <div class="dimension-bar">
-            <div class="label-row">
-              <strong>${escapeHtml(d.id)} · ${escapeHtml(d.name)}</strong>
-              <span class="pct">${d.score} / ${d.max}</span>
-            </div>
-            <div class="bar"><div class="fill" style="width: ${Math.max(2, Math.min(100, pct))}%"></div></div>
-          </div>
-        `;
-      }).join("")}
-    </section>
+  const dimsLabel = cfg.dimensionsSectionLabel || "六维兴趣分数";
+  const perLetterLabel = cfg.perLetterSectionLabel || "主要维度解读";
+  const domains = cfg.domains;
+  const dimsById = Object.fromEntries(sorted.map((d) => [d.id, d]));
 
+  const renderBar = (d) => {
+    const pct = ((d.score - d.min) / (d.max - d.min)) * 100;
+    return `
+      <div class="dimension-bar">
+        <div class="label-row">
+          <strong>${escapeHtml(d.id)} · ${escapeHtml(d.name)}</strong>
+          <span class="pct">${d.score} / ${d.max}</span>
+        </div>
+        <div class="bar"><div class="fill" style="width: ${Math.max(2, Math.min(100, pct))}%"></div></div>
+      </div>
+    `;
+  };
+
+  const dimsSection = domains
+    ? Object.values(domains).map((dom) => `
+        <h3 style="margin-top:1.4rem;">${escapeHtml(dom.name)}</h3>
+        ${(dom.themes || [])
+          .map((id) => dimsById[id])
+          .filter(Boolean)
+          .sort((a, b) => b.score - a.score)
+          .map(renderBar)
+          .join("")}
+      `).join("")
+    : sorted.map(renderBar).join("");
+
+  const codeSection = cfg.hideCodeSection ? "" : `
     <section class="result-section">
       <h2>你的兴趣代码: ${escapeHtml(interp.code)}</h2>
       ${interp.combined?.detail ? paragraphs(interp.combined.detail) : ""}
       ${interp.combined?.careers?.length ? `<p><strong>代表性职业: </strong>${interp.combined.careers.map(escapeHtml).join("、")}</p>` : ""}
     </section>
+  `;
+
+  return `
+    <section class="result-section">
+      <h2>${escapeHtml(dimsLabel)}</h2>
+      ${dimsSection}
+    </section>
+
+    ${codeSection}
 
     <section class="result-section">
-      <h2>主要维度解读</h2>
+      <h2>${escapeHtml(perLetterLabel)}</h2>
       ${interp.perLetter.map((p) => `
-        <div style="margin-bottom: 1.2rem;">
+        <div style="margin-bottom: 1.4rem;">
           <h3>${escapeHtml(p.dimension.id)} · ${escapeHtml(p.dimension.name)}</h3>
           ${p.info?.summary ? `<p>${escapeHtml(p.info.summary)}</p>` : ""}
+          ${p.info?.detail ? paragraphs(p.info.detail) : ""}
+          ${p.info?.watchout ? `<p class="muted"><strong>注意: </strong>${escapeHtml(p.info.watchout)}</p>` : ""}
           ${p.info?.careers?.length ? `<p class="muted">典型职业: ${p.info.careers.map(escapeHtml).join("、")}</p>` : ""}
         </div>
       `).join("")}

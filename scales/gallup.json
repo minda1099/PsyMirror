@@ -1,0 +1,437 @@
+{
+  "id": "gallup",
+  "name": "盖洛普 34 才干识别 (优势发现版)",
+  "shortName": "Gallup 34",
+  "tagline": "基于 34 主导才干框架的自评版本, 找出你的前 5 项天然优势",
+  "category": "career",
+  "language": "zh-CN",
+  "questionCount": 102,
+  "estimatedMinutes": 22,
+  "source": {
+    "author": "本测评由本项目自行编写题目, 借鉴公开描述的 34 才干主题框架 (Clifton 等)",
+    "year": 2026,
+    "publication": "Rath, T. (2007). StrengthsFinder 2.0. Gallup Press. (作为框架参考, 不包含其测验原题)",
+    "license": "CliftonStrengths® 和 StrengthsFinder® 是 Gallup, Inc. 的注册商标。本测评 **不是** 盖洛普官方测评, 不使用其题库、算法或排序方法, 仅借用公开可知的 34 主题名称与含义进行自评式探索, 仅供学习与自我了解。如需出具用于职业发展的官方报告, 请访问 gallup.com 购买官方测评。",
+    "note": "Don Clifton 提出: 每个人都有一组天然的「才干 (Talent)」—— 重复出现的思维、感受和行为模式; 把才干乘以投入与练习, 才形成「优势 (Strength)」。本框架认为个人发展的最高杠杆是放大自身的主导才干, 而非补足短板。"
+  },
+  "intro": "「优势识别」框架由心理学家 Don Clifton 提出, 把人的天然才干归纳为 34 个主题, 又进一步划入 4 大领域:\n\n• 执行力 (Executing) — 你怎样把事情做成\n• 影响力 (Influencing) — 你怎样推动他人\n• 关系建立 (Relationship Building) — 你怎样维系团队与情感连接\n• 战略思维 (Strategic Thinking) — 你怎样思考与决策\n\n每个人都拥有全部 34 项才干, 但强弱顺序不同。最常被引用的是「前 5 项主导才干」——它们是你最自然、最不费力就能发挥的优势。\n\n请注意: 本测评不是盖洛普官方 CliftonStrengths® 测评, 而是基于公开框架自撰的自评工具, 用于探索方向、不作正式测评依据。",
+  "disclaimer": "天然才干不等于「能力」或「成就」, 才干需要乘以投入和练习才能变成真正的优势。低分主题并不代表「你不行」, 只代表它不是你最自然的表达方式。本结果是自我探索的参考, 不是评价。",
+  "instructions": "下面共 102 道题, 每道描述一种思维、感受或行为方式。请按它与你的实际相符程度评分 (而非「你希望成为什么样」)。请凭直觉作答, 不要过度思考。",
+  "scale": {
+    "type": "likert",
+    "options": [
+      { "label": "非常不像我", "value": 1 },
+      { "label": "不太像我", "value": 2 },
+      { "label": "中等", "value": 3 },
+      { "label": "比较像我", "value": 4 },
+      { "label": "非常像我", "value": 5 }
+    ]
+  },
+  "questions": [
+    { "id": 1,  "text": "即使是周末或假期, 我也会想做点有意义的事而不是完全放空", "dimension": "Achiever" },
+    { "id": 2,  "text": "一天结束时若没完成什么实质的事, 我会感到不安", "dimension": "Achiever" },
+    { "id": 3,  "text": "我喜欢列任务清单, 划掉每一项让我有成就感", "dimension": "Achiever" },
+
+    { "id": 4,  "text": "我能同时推进多个项目, 并在它们之间灵活切换", "dimension": "Arranger" },
+    { "id": 5,  "text": "资源、时间、人手都不够时, 我擅长找出最优组合", "dimension": "Arranger" },
+    { "id": 6,  "text": "即使计划已定, 我也会留意是否有更高效的执行方式", "dimension": "Arranger" },
+
+    { "id": 7,  "text": "我有几条不可妥协的核心价值观, 违背它们的事我会拒绝", "dimension": "Belief" },
+    { "id": 8,  "text": "我做事的根本动机来自意义感, 而不是金钱或地位", "dimension": "Belief" },
+    { "id": 9,  "text": "工作必须与我所相信的事一致, 否则我做不下去", "dimension": "Belief" },
+
+    { "id": 10, "text": "看到规则因为「特殊关系」被例外, 我会觉得不舒服", "dimension": "Consistency" },
+    { "id": 11, "text": "比起灵活的特例, 我更相信对所有人一致的规则", "dimension": "Consistency" },
+    { "id": 12, "text": "我会留意是否每个人都得到了同等的机会和待遇", "dimension": "Consistency" },
+
+    { "id": 13, "text": "重要决定前, 我会反复推演可能出错的环节", "dimension": "Deliberative" },
+    { "id": 14, "text": "比起快速行动, 我更愿意多花时间收集信息再下手", "dimension": "Deliberative" },
+    { "id": 15, "text": "我不轻易公开真实想法, 除非确信对方可信", "dimension": "Deliberative" },
+
+    { "id": 16, "text": "我习惯把事拆成步骤, 按部就班完成", "dimension": "Discipline" },
+    { "id": 17, "text": "凌乱的环境会影响我的状态, 我喜欢整洁有序", "dimension": "Discipline" },
+    { "id": 18, "text": "我偏好有清晰流程的工作方式, 不喜欢临时拍脑袋", "dimension": "Discipline" },
+
+    { "id": 19, "text": "一旦确定目标, 我能屏蔽干扰长时间投入", "dimension": "Focus" },
+    { "id": 20, "text": "我经常问自己: 「这件事是否在帮我接近目标?」", "dimension": "Focus" },
+    { "id": 21, "text": "偏离主线的临时任务和会议让我烦躁", "dimension": "Focus" },
+
+    { "id": 22, "text": "答应过的事我会想尽办法兑现, 哪怕牺牲自己的时间", "dimension": "Responsibility" },
+    { "id": 23, "text": "团队任务出现疏漏时, 我倾向于自己接过来收尾", "dimension": "Responsibility" },
+    { "id": 24, "text": "「言出必行」是我自我评价的核心标准", "dimension": "Responsibility" },
+
+    { "id": 25, "text": "看到一个出问题的系统/流程/产品, 我会很想把它修好", "dimension": "Restorative" },
+    { "id": 26, "text": "比起从零开始, 我更喜欢接手一个有问题的项目并解决它", "dimension": "Restorative" },
+    { "id": 27, "text": "我擅长在看似无解的问题里找出关键症结", "dimension": "Restorative" },
+
+    { "id": 28, "text": "想到一个想法, 我倾向于「先做起来再说」", "dimension": "Activator" },
+    { "id": 29, "text": "漫长的讨论让我焦躁, 我更想看到具体的动作", "dimension": "Activator" },
+    { "id": 30, "text": "别人还在评估时, 我可能已经在做第一步了", "dimension": "Activator" },
+
+    { "id": 31, "text": "需要有人拍板时, 我不介意自己来", "dimension": "Command" },
+    { "id": 32, "text": "我能在意见分歧时直接表达, 不会因怕冲突而沉默", "dimension": "Command" },
+    { "id": 33, "text": "我天然倾向于在群体中承担「负责人」角色", "dimension": "Command" },
+
+    { "id": 34, "text": "我能把复杂的事讲得让别人听得进去", "dimension": "Communication" },
+    { "id": 35, "text": "我喜欢用故事或比喻让观点更有感染力", "dimension": "Communication" },
+    { "id": 36, "text": "我在公开表达比私下闲聊更自然", "dimension": "Communication" },
+
+    { "id": 37, "text": "我会下意识地把自己和同行的表现做比较", "dimension": "Competition" },
+    { "id": 38, "text": "「第二名」让我难受, 我希望在重要的事上是第一", "dimension": "Competition" },
+    { "id": 39, "text": "比赛和排名比无指标的努力更让我投入", "dimension": "Competition" },
+
+    { "id": 40, "text": "我宁愿把擅长的事做到顶尖, 也不愿在不擅长的事上勉强达标", "dimension": "Maximizer" },
+    { "id": 41, "text": "看到一件作品已经合格, 我仍想再打磨它到更出色", "dimension": "Maximizer" },
+    { "id": 42, "text": "我相信「放大长板」比「补短板」回报更高", "dimension": "Maximizer" },
+
+    { "id": 43, "text": "哪怕很多人质疑, 我也敢相信自己的判断并继续做", "dimension": "SelfAssurance" },
+    { "id": 44, "text": "没有外部认可的情况下, 我也能自己给自己定锚", "dimension": "SelfAssurance" },
+    { "id": 45, "text": "重要决定我主要靠自己的判断, 而不是征求他人意见", "dimension": "SelfAssurance" },
+
+    { "id": 46, "text": "我希望我的工作能在更大范围内被人看见", "dimension": "Significance" },
+    { "id": 47, "text": "「平庸但安稳」的人生对我没有吸引力", "dimension": "Significance" },
+    { "id": 48, "text": "我做事的动力之一是希望未来回看时它有分量", "dimension": "Significance" },
+
+    { "id": 49, "text": "陌生人多的场合让我兴奋而不是紧张", "dimension": "Woo" },
+    { "id": 50, "text": "我能在很短时间内和一个陌生人聊得像老朋友", "dimension": "Woo" },
+    { "id": 51, "text": "我喜欢拓展人脉, 认识不同领域的人", "dimension": "Woo" },
+
+    { "id": 52, "text": "计划临时被打乱, 我能很快调整、不会很焦虑", "dimension": "Adaptability" },
+    { "id": 53, "text": "我喜欢「随机应变」胜过「严格按计划」", "dimension": "Adaptability" },
+    { "id": 54, "text": "我对未来不做太长远的具体规划, 更看重眼下", "dimension": "Adaptability" },
+
+    { "id": 55, "text": "我相信发生的事都有它的意义, 即使当下看不出来", "dimension": "Connectedness" },
+    { "id": 56, "text": "我能感受到自己是更大整体 (团队/社区/世界) 的一部分", "dimension": "Connectedness" },
+    { "id": 57, "text": "看似随机的事件, 我倾向于在其中寻找联系和模式", "dimension": "Connectedness" },
+
+    { "id": 58, "text": "看到别人因为我的帮助而成长, 比我自己的成就让我更满足", "dimension": "Developer" },
+    { "id": 59, "text": "我能在一个新人身上看到他自己都没发现的潜力", "dimension": "Developer" },
+    { "id": 60, "text": "我喜欢做导师或教练的角色, 陪伴他人进步", "dimension": "Developer" },
+
+    { "id": 61, "text": "别人未说出口的情绪, 我也常能感受到", "dimension": "Empathy" },
+    { "id": 62, "text": "在群体中, 我会先注意到谁状态不太对", "dimension": "Empathy" },
+    { "id": 63, "text": "我容易被他人的情绪牵动, 包括陌生人的悲伤", "dimension": "Empathy" },
+
+    { "id": 64, "text": "我会主动寻找观点的共同点, 而不是放大分歧", "dimension": "Harmony" },
+    { "id": 65, "text": "团队气氛不和时, 我会不自觉想去调节", "dimension": "Harmony" },
+    { "id": 66, "text": "我相信很多冲突其实是不必要的, 可以绕过去", "dimension": "Harmony" },
+
+    { "id": 67, "text": "看到有人被冷落或排除在外, 我会主动把他拉进来", "dimension": "Includer" },
+    { "id": 68, "text": "我反感「圈子文化」和小团体", "dimension": "Includer" },
+    { "id": 69, "text": "团队决定一件事时, 我会留意是否所有人都有发言机会", "dimension": "Includer" },
+
+    { "id": 70, "text": "我能很快观察到每个人独特的特点和「按钮」", "dimension": "Individualization" },
+    { "id": 71, "text": "我相信「适合每个人的方法不同」, 会因人而异调整沟通方式", "dimension": "Individualization" },
+    { "id": 72, "text": "通用模板或统一管理方式让我觉得粗糙", "dimension": "Individualization" },
+
+    { "id": 73, "text": "我能在艰难情况里找到值得感谢、可以乐观看待的一面", "dimension": "Positivity" },
+    { "id": 74, "text": "别人说我在场时, 气氛会变好", "dimension": "Positivity" },
+    { "id": 75, "text": "我相信积极的心态会真的影响事情的结果", "dimension": "Positivity" },
+
+    { "id": 76, "text": "比起 100 个泛泛之交, 我更愿意有 3 个真正深交的朋友", "dimension": "Relator" },
+    { "id": 77, "text": "我和老朋友的关系往往持续很多年", "dimension": "Relator" },
+    { "id": 78, "text": "表面化的社交对我来说很消耗", "dimension": "Relator" },
+
+    { "id": 79, "text": "听到一个结论, 我会本能地问: 「证据是什么?」", "dimension": "Analytical" },
+    { "id": 80, "text": "我喜欢把复杂的现象拆解成因果链", "dimension": "Analytical" },
+    { "id": 81, "text": "我对没有数据支持的观点会保持怀疑", "dimension": "Analytical" },
+
+    { "id": 82, "text": "我喜欢了解一件事、一家公司或一个领域的来龙去脉", "dimension": "Context" },
+    { "id": 83, "text": "「这是怎么演变过来的」对我比「现在长什么样」更重要", "dimension": "Context" },
+    { "id": 84, "text": "我相信不懂历史就理解不了今天的处境", "dimension": "Context" },
+
+    { "id": 85, "text": "我喜欢想象 10 年后的世界、行业或自己的样子", "dimension": "Futuristic" },
+    { "id": 86, "text": "描绘愿景比讨论眼下细节更让我兴奋", "dimension": "Futuristic" },
+    { "id": 87, "text": "我能用对未来的想象激励自己和身边的人", "dimension": "Futuristic" },
+
+    { "id": 88, "text": "我能在两件看起来不相关的事之间看到联系", "dimension": "Ideation" },
+    { "id": 89, "text": "我对新概念、新方法的好奇心总是很强", "dimension": "Ideation" },
+    { "id": 90, "text": "头脑风暴是我最享受的会议形式", "dimension": "Ideation" },
+
+    { "id": 91, "text": "我习惯收藏文章、书、链接, 「以备未来需要」", "dimension": "Input" },
+    { "id": 92, "text": "我对许多看似无用的小知识也感兴趣", "dimension": "Input" },
+    { "id": 93, "text": "阅读、整理、归档信息让我有满足感", "dimension": "Input" },
+
+    { "id": 94, "text": "我需要每天有独处思考的时间, 否则会烦躁", "dimension": "Intellection" },
+    { "id": 95, "text": "我喜欢长时间琢磨一个问题, 而不是赶紧给答案", "dimension": "Intellection" },
+    { "id": 96, "text": "我经常在脑海里和自己「对话」, 权衡不同想法", "dimension": "Intellection" },
+
+    { "id": 97, "text": "学一个新东西时, 「学会」的过程让我兴奋", "dimension": "Learner" },
+    { "id": 98, "text": "我经常被新领域的入门内容吸引而开始学习", "dimension": "Learner" },
+    { "id": 99, "text": "比起精通一个领域, 我更享受不断接触新领域", "dimension": "Learner" },
+
+    { "id": 100, "text": "面对复杂局面, 我能很快看出最可能成功的几条路径", "dimension": "Strategic" },
+    { "id": 101, "text": "我习惯先想清楚目的, 再选合适的手段", "dimension": "Strategic" },
+    { "id": 102, "text": "别人觉得绕弯路时, 我可能已经看到捷径", "dimension": "Strategic" }
+  ],
+  "scoring": {
+    "method": "dimension-sum",
+    "dimensions": [
+      { "id": "Achiever", "name": "成就" },
+      { "id": "Arranger", "name": "统筹" },
+      { "id": "Belief", "name": "信念" },
+      { "id": "Consistency", "name": "公平" },
+      { "id": "Deliberative", "name": "审慎" },
+      { "id": "Discipline", "name": "纪律" },
+      { "id": "Focus", "name": "专注" },
+      { "id": "Responsibility", "name": "责任" },
+      { "id": "Restorative", "name": "排难" },
+      { "id": "Activator", "name": "行动" },
+      { "id": "Command", "name": "统率" },
+      { "id": "Communication", "name": "沟通" },
+      { "id": "Competition", "name": "竞争" },
+      { "id": "Maximizer", "name": "完美" },
+      { "id": "SelfAssurance", "name": "自信" },
+      { "id": "Significance", "name": "追求" },
+      { "id": "Woo", "name": "取悦" },
+      { "id": "Adaptability", "name": "适应" },
+      { "id": "Connectedness", "name": "关联" },
+      { "id": "Developer", "name": "伯乐" },
+      { "id": "Empathy", "name": "体谅" },
+      { "id": "Harmony", "name": "和谐" },
+      { "id": "Includer", "name": "包容" },
+      { "id": "Individualization", "name": "个别" },
+      { "id": "Positivity", "name": "积极" },
+      { "id": "Relator", "name": "交往" },
+      { "id": "Analytical", "name": "分析" },
+      { "id": "Context", "name": "回顾" },
+      { "id": "Futuristic", "name": "前瞻" },
+      { "id": "Ideation", "name": "理念" },
+      { "id": "Input", "name": "搜集" },
+      { "id": "Intellection", "name": "思维" },
+      { "id": "Learner", "name": "学习" },
+      { "id": "Strategic", "name": "战略" }
+    ]
+  },
+  "interpretation": {
+    "type": "top-n-codes",
+    "topN": 5,
+    "hideCodeSection": true,
+    "dimensionsSectionLabel": "全部 34 项才干分数 (按四大领域分组)",
+    "perLetterSectionLabel": "你的前 5 项主导才干",
+    "domains": {
+      "executing": {
+        "name": "执行力 (Executing) — 把事情做成",
+        "themes": ["Achiever", "Arranger", "Belief", "Consistency", "Deliberative", "Discipline", "Focus", "Responsibility", "Restorative"]
+      },
+      "influencing": {
+        "name": "影响力 (Influencing) — 推动他人",
+        "themes": ["Activator", "Command", "Communication", "Competition", "Maximizer", "SelfAssurance", "Significance", "Woo"]
+      },
+      "relationship": {
+        "name": "关系建立 (Relationship Building) — 维系连接",
+        "themes": ["Adaptability", "Connectedness", "Developer", "Empathy", "Harmony", "Includer", "Individualization", "Positivity", "Relator"]
+      },
+      "strategic": {
+        "name": "战略思维 (Strategic Thinking) — 思考与决策",
+        "themes": ["Analytical", "Context", "Futuristic", "Ideation", "Input", "Intellection", "Learner", "Strategic"]
+      }
+    },
+    "letters": {
+      "Achiever": {
+        "name": "成就 Achiever",
+        "summary": "内心有一台持续运转的「计数器」, 每天都需要完成些什么才安心。",
+        "detail": "你的精力似乎源源不断, 哪怕周末或假期也很难真正放空。这种内驱力让你成为团队中可靠的「持续产出者」, 上司可以安心地把交付压力放在你身上。\n\n但这种才干也是一把双刃剑: 你可能很难允许自己「无产出地存在」, 也容易把休息当作浪费。",
+        "watchout": "把休息当作一项「待完成的任务」, 给自己设定明确的 off 时段, 否则长期会燃尽。"
+      },
+      "Arranger": {
+        "name": "统筹 Arranger",
+        "summary": "面对复杂、变动的局面, 你能像下棋一样把资源、人、时间组合到最优位置。",
+        "detail": "你享受复杂度。一摊乱局放在你面前, 别人头疼, 你眼睛却亮。你会同时推进很多线程, 在它们之间灵活切换, 并不断寻找比当前方案更优的组合。\n\n你天然适合项目管理、运营调度、协调多方资源的角色。",
+        "watchout": "对节奏慢、结构固定的工作容易厌倦。给团队留够「确定性」, 不要把所有人都拖入持续重组的状态。"
+      },
+      "Belief": {
+        "name": "信念 Belief",
+        "summary": "你有几条不可妥协的核心价值观, 它们比薪水和职位更能驱动你的选择。",
+        "detail": "外界看你时, 会觉得你「认死理」或「有一身正气」。其实你只是有一套清晰的价值排序, 当工作或环境与之冲突时, 你会主动选择离开或对抗, 而不是妥协。\n\n找到与价值观对齐的工作, 你能爆发出别人难以理解的能量。",
+        "watchout": "对价值观差异较大的同事容易过于严苛。提醒自己: 别人有别人的内在罗盘, 不必都和你对齐。"
+      },
+      "Consistency": {
+        "name": "公平 Consistency",
+        "summary": "你相信对所有人一致的规则比灵活的特例更公正, 看到「特殊对待」会不舒服。",
+        "detail": "你天然反感「关系决定结果」「特例搞特殊」的做法。你希望流程透明、人人按同一套规则被对待。这让你在 HR、合规、运营管理等需要保证一致性的岗位上很可靠。",
+        "watchout": "现实世界里因人而异有时是必要的。提醒自己: 公平不等于一刀切, 必要时给特例留空间。"
+      },
+      "Deliberative": {
+        "name": "审慎 Deliberative",
+        "summary": "你做重要决定前会反复推演风险, 不轻易冲动, 习惯把底牌留到最后。",
+        "detail": "你对世界的默认态度是谨慎的: 在行动前列出可能出错的环节, 在表达前判断对方是否可信。这让你在风控、法务、投资决策等高风险领域很有价值。\n\n你的「慢」不是优柔寡断, 而是把不确定性预先消化掉。",
+        "watchout": "速度优先的环境里你可能被误解为保守。学着把「审慎」表达成「降低风险」, 而不是「拒绝行动」。"
+      },
+      "Discipline": {
+        "name": "纪律 Discipline",
+        "summary": "你需要结构、流程和秩序, 凌乱让你不安, 清晰让你高效。",
+        "detail": "把任何事拆成步骤、按节奏推进, 是你最自然的工作方式。你会主动建立流程、模板、checklist, 把混乱的工作变成可重复的系统。这种才干在运营、工程管理、合规等领域非常有杠杆。",
+        "watchout": "面对快速变化、模糊性高的环境会很辛苦。学着先放下「完美流程」, 在不确定中先把第一步做出来。"
+      },
+      "Focus": {
+        "name": "专注 Focus",
+        "summary": "你能屏蔽干扰、长时间投入到一个目标上, 用「这件事是否帮我接近目标」过滤一切。",
+        "detail": "别人容易被新机会、新任务带偏, 而你像一支被锁定的箭。你设定方向, 然后心无旁骛地推进。这让你在长周期、需要深度投入的项目中很有产出力。",
+        "watchout": "对偏离主线的临时任务容易表现出不耐烦。提醒自己: 「专注」需要时间窗口, 但人际和团队需要适度灵活。"
+      },
+      "Responsibility": {
+        "name": "责任 Responsibility",
+        "summary": "答应过的事你一定要做到, 「言出必行」是你的核心标准。",
+        "detail": "你对承诺非常认真。哪怕情况变了、对方已经不在意, 你也会想尽办法兑现。这种品质让你成为团队里最被信任的「兜底者」, 但也很容易吸引过多任务到自己身上。",
+        "watchout": "学着区分「真正的承诺」和「随口的接受」, 学会说「不」, 否则你会变成团队的拖车。"
+      },
+      "Restorative": {
+        "name": "排难 Restorative",
+        "summary": "你被「坏掉的东西」吸引, 喜欢分析问题、找出症结、把它修好。",
+        "detail": "从零做一个新东西对你吸引力一般, 但接手一个有问题的系统、有缺陷的产品、运转不良的团队, 你会很兴奋。诊断 + 修复是你天然擅长的模式。",
+        "watchout": "学会享受「一切运转良好」的状态, 不要为了找问题而制造问题。"
+      },
+      "Activator": {
+        "name": "行动 Activator",
+        "summary": "想到一个想法你就想立刻动手, 漫长的讨论让你焦躁。",
+        "detail": "「先做起来再说」是你的口头禅。你相信进展能带来下一步的信息, 而无休止的评估只会消耗动能。这让你在创业、产品早期、需要破局的场景中非常宝贵。",
+        "watchout": "在需要深度论证的场景里, 你的「先动起来」可能显得鲁莽。学着区分「该动手的事」和「值得多想一会儿的事」。"
+      },
+      "Command": {
+        "name": "统率 Command",
+        "summary": "你不害怕冲突, 能直接表达立场, 在需要有人拍板时自然上前。",
+        "detail": "群体陷入观望或回避时, 你能站出来表态、定方向。你说话不会绕弯, 这让人有时不舒服, 但也让事情能往前走。",
+        "watchout": "你的直接对部分人是冒犯。提醒自己: 「说清楚」可以保留, 但「怎么说」可以调整。"
+      },
+      "Communication": {
+        "name": "沟通 Communication",
+        "summary": "你能把复杂的事讲得让别人听得进去, 喜欢用故事和比喻让观点活起来。",
+        "detail": "你天生擅长把抽象变具体、把无聊变有趣。在演讲、销售、教学、品牌、内容等需要让信息「跑得动」的岗位上你有显著优势。",
+        "watchout": "警惕「表达强 = 想法对」的错觉。提醒自己: 故事讲得好, 不代表底层逻辑就站得住。"
+      },
+      "Competition": {
+        "name": "竞争 Competition",
+        "summary": "你对排名和比较很敏感, 「第二名」让你难受, 比赛比无指标的努力更让你投入。",
+        "detail": "你的内在驱动很大一部分来自「赢」。看到一个明确的对手、一个排名榜, 你的能量会被立刻调动起来。销售、运动、交易、运营增长等以指标论英雄的领域很适合你。",
+        "watchout": "竞争心强容易让协作变成隐性较劲。区分「该赢的战场」和「该共赢的伙伴」, 否则容易树敌。"
+      },
+      "Maximizer": {
+        "name": "完美 Maximizer",
+        "summary": "你相信「放大长板」比「补短板」回报更高, 喜欢把擅长的事做到极致。",
+        "detail": "你对「合格」没什么兴趣, 对「卓越」着迷。你愿意把一件作品/产品/方法反复打磨到顶尖, 也偏好与同样追求卓越的人合作。这是顶尖专业人士、艺术家、产品工匠的常见才干。",
+        "watchout": "对「凑合的好」容易嫌弃, 可能拖慢交付。学着判断: 这件事是该做到 90 分还是该到 70 分就发布。"
+      },
+      "SelfAssurance": {
+        "name": "自信 Self-Assurance",
+        "summary": "你对自己的判断有一种内在锚定, 哪怕外界质疑, 也敢相信自己继续走。",
+        "detail": "你不需要外部认可来确认自己的方向。这让你在不确定的环境、孤独的决策、与众不同的路径上特别有韧性。创业者、艺术家、独立研究者中这种才干很常见。",
+        "watchout": "「我相信自己」和「我从不需要反馈」是两件事。主动找几位你信任的人提供逆耳反馈, 否则容易在错误方向上走太远。"
+      },
+      "Significance": {
+        "name": "追求 Significance",
+        "summary": "你希望自己的工作有分量、被人看见, 「平庸但安稳」不是你想要的人生。",
+        "detail": "你对「让自己的存在有印记」有强烈渴望。这种动力会推你去争取更大的舞台、更有影响力的项目, 在演艺、创业、学术、政治、品牌等需要「立人设」的领域很有用。",
+        "watchout": "别让「想被看见」遮蔽「值得被看见」。先做出真正有价值的事, 再让它被看见, 顺序很重要。"
+      },
+      "Woo": {
+        "name": "取悦 Woo (Winning Others Over)",
+        "summary": "陌生人多的场合让你兴奋而不是紧张, 你能很快和一个陌生人聊到熟人状态。",
+        "detail": "Woo 是 Winning Others Over 的缩写。你天然擅长破冰、拓展、把陌生人变成「我认识的人」。在销售、BD、公关、市场、连接型岗位你能持续创造价值。",
+        "watchout": "「认识很多人」不等于「拥有深度关系」。在你想要支持的时刻, 不一定每个「熟人」都靠得住。"
+      },
+      "Adaptability": {
+        "name": "适应 Adaptability",
+        "summary": "你活在当下, 计划被打乱也能很快重组, 「随机应变」比「严格按计划」更自然。",
+        "detail": "你不喜欢被远期计划锁死。你相信现在的反应比过去的预设更重要, 这让你在创业早期、应急响应、快速变化的环境里成为团队的稳定器。",
+        "watchout": "在需要长期规划、稳定节奏的环境里, 你的「灵活」会被误读为「不可靠」。学着至少把核心承诺锚定下来。"
+      },
+      "Connectedness": {
+        "name": "关联 Connectedness",
+        "summary": "你相信事物间存在更深的联系, 「凡事皆有缘故」是你看世界的底色。",
+        "detail": "你能感受到自己是更大整体——团队、社区、人类、宇宙——的一部分。这种感知让你在艰难时刻不容易绝望, 也让你天然倾向于做「跨越个体的事」: 公益、社群、文化、可持续。",
+        "watchout": "把「意义感」与「证据」分清楚。看到联系是你的天赋, 但有时事情就是巧合, 不必硬解。"
+      },
+      "Developer": {
+        "name": "伯乐 Developer",
+        "summary": "你天然能看到别人身上的潜能, 享受陪伴他人成长的过程。",
+        "detail": "你能在一个新人身上看到他自己都没意识到的可能性, 并耐心地为他提供支持。这是教师、教练、导师、HR、管理者最核心的才干之一。\n\n看到别人因你而成长, 比自己拿到成就更让你满足。",
+        "watchout": "把同样的精力也留给自己。教练别人之外, 你也值得有人陪伴你成长。"
+      },
+      "Empathy": {
+        "name": "体谅 Empathy",
+        "summary": "你能感受到别人未说出口的情绪, 在群体中往往最先注意到谁状态不对。",
+        "detail": "这是一种近乎直觉的情绪感知能力。在咨询、教育、医疗、护理、设计 (尤其 UX)、客户服务等需要理解他人内在世界的领域, 这种才干极其稀缺。",
+        "watchout": "你容易被他人情绪「灌满」。学习给情绪建一道边界, 否则会被持续消耗到耗竭。"
+      },
+      "Harmony": {
+        "name": "和谐 Harmony",
+        "summary": "你相信很多冲突是不必要的, 倾向于寻找共同点而不是放大分歧。",
+        "detail": "你天然是团队的「润滑剂」, 会主动调节气氛、回避无意义的争执、推动大家朝可达成共识的方向走。在协作密集的团队里你很重要。",
+        "watchout": "为了维持和谐, 你可能回避必要的冲突。提醒自己: 有些真问题需要拿出来谈, 而不是绕开。"
+      },
+      "Includer": {
+        "name": "包容 Includer",
+        "summary": "你在意每个人是否被包括, 看到有人被冷落会主动把他拉进来。",
+        "detail": "你反感「圈子文化」「小团体」, 主张「桌子越大越好」。在团队建设、社群运营、公益、教育等领域, 你能让所有人都感到「这里有我」, 这是一种被严重低估的领导力。",
+        "watchout": "「所有人都被包括」有时与效率冲突。明确什么场合需要边界 (比如核心决策圈), 不是所有事都需要拉所有人。"
+      },
+      "Individualization": {
+        "name": "个别 Individualization",
+        "summary": "你能迅速捕捉到每个人的独特之处, 相信「适合每个人的方法不同」。",
+        "detail": "你能看出 A 适合鼓励、B 适合压力、C 需要被信任、D 需要详细指令。这让你在管理、招聘、咨询、教练、教育等需要因人而异的工作中极有优势。\n\n你天然反感「一刀切」的管理或标准答案。",
+        "watchout": "在需要规模化的场景里 (比如管理几百人), 「因人而异」可能不可持续。学着设计「框架 + 个性化空间」的复合方法。"
+      },
+      "Positivity": {
+        "name": "积极 Positivity",
+        "summary": "你在艰难情况里也能找到值得感谢、可以乐观看待的一面, 让周围的人状态变好。",
+        "detail": "你的乐观是有感染力的。你能让一个低迷的会议室、一个焦虑的团队、一个挫败的朋友迅速感到「也许还行」。这是你最有价值的礼物之一。",
+        "watchout": "别让「积极」变成「回避真实问题」。允许自己和团队偶尔承认: 这件事确实很糟。"
+      },
+      "Relator": {
+        "name": "交往 Relator",
+        "summary": "你偏好少数深度的长期关系, 表面化的社交让你消耗。",
+        "detail": "你不是不爱社交, 而是只在小范围的深度连接里才感到充实。你的友情往往持续多年, 你也容易在职场里和少数人结成「过命」的合作关系。",
+        "watchout": "在需要快速拓展人脉的场合 (新公司、新城市、新岗位) 会比较吃力。可以借力 Woo 类型的同事帮你过渡。"
+      },
+      "Analytical": {
+        "name": "分析 Analytical",
+        "summary": "听到一个结论你会本能问「证据是什么」, 喜欢把现象拆成因果链。",
+        "detail": "你的默认操作是怀疑 + 求证。你会自动把模糊的论点拆成可验证的部件, 用数据和逻辑去检验。这是数据科学、研究、审计、调查报道、严肃决策的核心才干。",
+        "watchout": "你的怀疑容易被对方理解成挑刺。学会先承认对方的合理部分, 再带出你的质询, 沟通成本会降很多。"
+      },
+      "Context": {
+        "name": "回顾 Context",
+        "summary": "你通过研究历史和起源来理解现在和未来, 「这是怎么演变过来的」对你比「现在长什么样」更重要。",
+        "detail": "在做任何重大决策前, 你会本能去问: 这件事是怎么走到今天这一步的? 上一次类似情况发生时结果如何? 这种历史视角让你在战略、政策、教育、组织诊断等领域非常有杠杆。",
+        "watchout": "对于「先动起来再学习」的快节奏环境会显得慢。学着把历史研究压缩成关键三问, 而不是从头讲起。"
+      },
+      "Futuristic": {
+        "name": "前瞻 Futuristic",
+        "summary": "你被未来吸引, 描绘 10 年后的愿景比讨论眼下细节更让你兴奋。",
+        "detail": "你能把模糊的未来想象成具体的画面, 并用这种画面感染别人。这是创始人、产品愿景者、战略规划者、变革领导者的核心才干。",
+        "watchout": "团队需要的不只是远方的星, 还有脚下的下一步。学着把愿景拆成 30 天、90 天、6 个月的具体动作。"
+      },
+      "Ideation": {
+        "name": "理念 Ideation",
+        "summary": "你能在不相关的事之间看到联系, 对新概念有持续的好奇心。",
+        "detail": "你的大脑像一台联想机, 不断把见到的事物连接起来, 产出新想法。头脑风暴是你最享受的会议形式。在创意、产品、写作、广告、研究等需要「新角度」的领域你非常有产出力。",
+        "watchout": "想法多 ≠ 想法落地。配一个 Discipline 或 Focus 强的搭档帮你筛选并执行, 否则你的好点子可能停在脑子里。"
+      },
+      "Input": {
+        "name": "搜集 Input",
+        "summary": "你习惯收藏信息——文章、书、链接、小知识——「以备未来需要」。",
+        "detail": "你像一个个人图书馆员。你的大脑和硬盘里存着各种主题的资料, 在需要时能迅速调出。这在研究、咨询、知识管理、内容创作等知识密集型工作中是巨大资产。",
+        "watchout": "警惕「囤积 = 学到」的幻觉。定期把收集的东西拿出来用, 而不是只是收着。"
+      },
+      "Intellection": {
+        "name": "思维 Intellection",
+        "summary": "你享受独自深度思考的时间, 喜欢长时间琢磨一个问题, 而不是赶紧给答案。",
+        "detail": "你需要每天有一段「自己和自己对话」的时间, 否则会烦躁。你在沉思中孕育出别人觉得「想得真深」的结论。哲学、写作、研究、设计、战略等需要深度思考的领域是你的舞台。",
+        "watchout": "团队里需要你尽快表态时, 你的「再想想」可能拖慢节奏。学着把部分思考前置, 这样关键时刻能给出回应。"
+      },
+      "Learner": {
+        "name": "学习 Learner",
+        "summary": "学一个新东西时, 「学会」的过程让你兴奋胜过结果本身。",
+        "detail": "你享受从「不知道」到「知道」的过程。你常被新领域的入门内容吸引而开始投入。这让你在快速变化的行业、跨领域的工作、需要不断更新的岗位 (技术、产品、咨询) 有持续优势。",
+        "watchout": "对「精通」的耐心可能不够。如果你想在一个领域达到顶尖, 需要刻意忍受「一段时间不再换主题」的乏味。"
+      },
+      "Strategic": {
+        "name": "战略 Strategic",
+        "summary": "面对复杂局面, 你能很快看出最可能成功的几条路径, 习惯先想清楚目的再选手段。",
+        "detail": "别人看到一团乱麻, 你看到几条隐藏的路径以及最该走哪一条。这是高级决策、咨询合伙人、CEO、战略规划者最核心的才干, 也是大多数关键决定的杠杆点。",
+        "watchout": "你的判断往往跑在前面, 别忘了把推理过程讲给团队, 否则别人只能看到你的结论, 不知道如何信任。"
+      }
+    }
+  }
+}
