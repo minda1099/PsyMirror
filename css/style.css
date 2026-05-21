@@ -121,7 +121,7 @@ p { margin: 0 0 1em; }
 .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
 
 /* ---- Scales grid ----------------------------------------------------- */
-.scales-section { padding: 3rem 0; }
+.scales-section { padding-top: 3rem; padding-bottom: 3rem; }
 .section-header { margin-bottom: 1.8rem; }
 .section-header h2 { margin-bottom: 0.2rem; }
 
@@ -174,7 +174,7 @@ p { margin: 0 0 1em; }
 }
 
 /* ---- About ----------------------------------------------------------- */
-.about-section { padding: 2rem 0 4rem; }
+.about-section { padding-top: 2rem; padding-bottom: 4rem; }
 .about-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
