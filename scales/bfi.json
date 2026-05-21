@@ -1,0 +1,191 @@
+{
+  "id": "bfi",
+  "name": "大五人格量表 BFI-44",
+  "shortName": "BFI-44",
+  "tagline": "学术界最受认可的人格模型, 测量五大特质",
+  "category": "personality",
+  "language": "zh-CN",
+  "questionCount": 44,
+  "estimatedMinutes": 10,
+  "source": {
+    "author": "John OP, Donahue EM, Kentle RL",
+    "year": 1991,
+    "publication": "The Big Five Inventory--Versions 4a and 54. Berkeley: University of California, Berkeley, Institute of Personality and Social Research.",
+    "license": "可免费用于非商业研究 (Oliver P. John, UC Berkeley)",
+    "chineseValidation": "中文版翻译参考 Carciofo R, et al. (2016). Personality and Individual Differences, 96, 200-206; 以及 王孟成等 (2010). 心理学探新, 30(4), 50-55."
+  },
+  "intro": "大五人格模型 (Big Five / Five-Factor Model) 是当代人格心理学的主流理论框架, 通过五个相互独立的维度刻画人格的稳定差异:\n\n• O 开放性 (Openness): 想象力、好奇心、艺术敏感性\n• C 尽责性 (Conscientiousness): 自律、组织性、目标导向\n• E 外向性 (Extraversion): 社交性、活力、积极情绪\n• A 宜人性 (Agreeableness): 信任、合作、友善\n• N 神经质 (Neuroticism): 情绪不稳定性、焦虑倾向\n\nBFI-44 是 Oliver John 等开发的 44 题版本, 是大五人格研究中使用最广泛的工具之一。",
+  "disclaimer": "大五人格不存在「好」与「坏」的特质——任何特质的高低都各有其优势与挑战。本测试结果反映的是你的稳定倾向, 但不应被用来给自己或他人贴标签。",
+  "instructions": "下面列出了一系列可能或不可能用来描述你自己的特征。请根据你对每条描述与自己的符合程度评分。",
+  "scale": {
+    "type": "likert",
+    "options": [
+      { "label": "非常不同意", "value": 1 },
+      { "label": "比较不同意", "value": 2 },
+      { "label": "中立 / 不确定", "value": 3 },
+      { "label": "比较同意", "value": 4 },
+      { "label": "非常同意", "value": 5 }
+    ]
+  },
+  "questions": [
+    { "id": 1, "text": "我是健谈的", "dimension": "E" },
+    { "id": 2, "text": "我倾向于挑别人的毛病", "dimension": "A", "reverse": true },
+    { "id": 3, "text": "我做事很彻底", "dimension": "C" },
+    { "id": 4, "text": "我容易感到忧郁", "dimension": "N" },
+    { "id": 5, "text": "我富有原创力, 经常提出新点子", "dimension": "O" },
+    { "id": 6, "text": "我比较内敛、寡言", "dimension": "E", "reverse": true },
+    { "id": 7, "text": "我乐于助人, 不自私", "dimension": "A" },
+    { "id": 8, "text": "我有时会粗心大意", "dimension": "C", "reverse": true },
+    { "id": 9, "text": "我比较放松, 能很好地应对压力", "dimension": "N", "reverse": true },
+    { "id": 10, "text": "我对很多不同的事物充满好奇", "dimension": "O" },
+    { "id": 11, "text": "我充满活力", "dimension": "E" },
+    { "id": 12, "text": "我容易与他人发生争执", "dimension": "A", "reverse": true },
+    { "id": 13, "text": "我是个可靠的工作伙伴", "dimension": "C" },
+    { "id": 14, "text": "我容易紧张", "dimension": "N" },
+    { "id": 15, "text": "我擅长动脑筋, 是个深度思考的人", "dimension": "O" },
+    { "id": 16, "text": "我能为事情带来很大的热情", "dimension": "E" },
+    { "id": 17, "text": "我有宽容的天性", "dimension": "A" },
+    { "id": 18, "text": "我倾向于做事缺乏条理", "dimension": "C", "reverse": true },
+    { "id": 19, "text": "我经常担忧", "dimension": "N" },
+    { "id": 20, "text": "我的想象力丰富", "dimension": "O" },
+    { "id": 21, "text": "我倾向于沉默寡言", "dimension": "E", "reverse": true },
+    { "id": 22, "text": "我一般是信任他人的", "dimension": "A" },
+    { "id": 23, "text": "我有时偷懒", "dimension": "C", "reverse": true },
+    { "id": 24, "text": "我情绪稳定, 不容易心烦", "dimension": "N", "reverse": true },
+    { "id": 25, "text": "我富有创造力", "dimension": "O" },
+    { "id": 26, "text": "我有自信、敢于表达自己", "dimension": "E" },
+    { "id": 27, "text": "我有时显得冷漠疏离", "dimension": "A", "reverse": true },
+    { "id": 28, "text": "我做事坚持不懈直到完成", "dimension": "C" },
+    { "id": 29, "text": "我情绪起伏较大", "dimension": "N" },
+    { "id": 30, "text": "我重视艺术、审美方面的体验", "dimension": "O" },
+    { "id": 31, "text": "我有时害羞、拘谨", "dimension": "E", "reverse": true },
+    { "id": 32, "text": "我对几乎所有人都体贴、友善", "dimension": "A" },
+    { "id": 33, "text": "我做事高效", "dimension": "C" },
+    { "id": 34, "text": "我在紧张情境下能保持镇定", "dimension": "N", "reverse": true },
+    { "id": 35, "text": "我更喜欢按部就班的工作", "dimension": "O", "reverse": true },
+    { "id": 36, "text": "我是外向、社交活跃的人", "dimension": "E" },
+    { "id": 37, "text": "我有时对人粗鲁", "dimension": "A", "reverse": true },
+    { "id": 38, "text": "我能制定计划并执行到底", "dimension": "C" },
+    { "id": 39, "text": "我容易紧张不安", "dimension": "N" },
+    { "id": 40, "text": "我喜欢反思和玩味各种想法", "dimension": "O" },
+    { "id": 41, "text": "我对艺术兴趣不大", "dimension": "O", "reverse": true },
+    { "id": 42, "text": "我喜欢与他人合作", "dimension": "A" },
+    { "id": 43, "text": "我容易分心", "dimension": "C", "reverse": true },
+    { "id": 44, "text": "我在艺术、音乐或文学方面有较深的鉴赏力", "dimension": "O" }
+  ],
+  "scoring": {
+    "method": "dimension-mean",
+    "dimensions": [
+      { "id": "O", "name": "开放性 Openness" },
+      { "id": "C", "name": "尽责性 Conscientiousness" },
+      { "id": "E", "name": "外向性 Extraversion" },
+      { "id": "A", "name": "宜人性 Agreeableness" },
+      { "id": "N", "name": "神经质 Neuroticism" }
+    ]
+  },
+  "interpretation": {
+    "type": "per-dimension-ranges",
+    "ranges": {
+      "O": [
+        {
+          "min": 1, "max": 2.49,
+          "level": "偏低",
+          "summary": "务实型, 偏好熟悉与确定",
+          "detail": "你倾向于关注具体、实用、已被验证的事物, 对抽象观念和艺术性体验兴趣较少。你重视传统、惯例和实际效果, 在熟悉的环境中表现稳定可靠。\n\n这种特质让你在需要持续性、可预测性的领域 (如运维、会计、生产管理) 表现出色。可能的挑战是在快速变化或要求创新的环境中适应较慢。"
+        },
+        {
+          "min": 2.5, "max": 3.5,
+          "level": "中等",
+          "summary": "在务实与好奇之间保持平衡",
+          "detail": "你能根据情境调整自己: 既能欣赏新观念、新体验, 也能在需要时遵循已有规则和方法。这种平衡让你在多数环境中都能较好适应。"
+        },
+        {
+          "min": 3.51, "max": 5,
+          "level": "偏高",
+          "summary": "想象力丰富, 求知欲旺盛, 对艺术敏感",
+          "detail": "你拥有丰富的内心世界和强烈的求知欲, 对抽象观念、艺术、文化、新体验保持开放态度。你享受思考「为什么」和「如果」, 倾向于挑战常规。\n\n这种特质在创造性工作、研究、艺术、咨询等领域是显著优势。可能的挑战是: 容易对琐碎、重复的工作感到不耐烦, 有时陷入想得多做得少。"
+        }
+      ],
+      "C": [
+        {
+          "min": 1, "max": 2.49,
+          "level": "偏低",
+          "summary": "灵活随性, 偏好弹性的节奏",
+          "detail": "你做事偏向自发和灵活, 不太喜欢被严格计划约束。你在需要应变和即兴反应的场景中表现自如, 但可能在长期项目、deadline 管理上需要外部支持。\n\n建议: 借助清单、提醒工具和小型的责任伙伴关系来弥补结构化的不足; 把大目标拆成短期可见进展的小步骤。"
+        },
+        {
+          "min": 2.5, "max": 3.5,
+          "level": "中等",
+          "summary": "在计划性与灵活性之间灵活切换",
+          "detail": "你能够根据任务和环境调整自己: 重要事情上能保持纪律, 日常生活中保留弹性。这种平衡通常是大多数职场和家庭场景下最实用的特质组合。"
+        },
+        {
+          "min": 3.51, "max": 5,
+          "level": "偏高",
+          "summary": "自律、有计划、追求高完成度",
+          "detail": "你做事有条理、目标明确、注重细节, 习惯把任务做到位。这种特质强烈预测学业、职业和健康行为方面的长期成功——研究表明, 尽责性是所有大五特质中对长期成就预测力最强的。\n\n可能的挑战: 高尽责者容易过度自我要求, 在面对失控的事情时容易焦虑; 也可能过度刻板, 难以容忍他人的「随意」。"
+        }
+      ],
+      "E": [
+        {
+          "min": 1, "max": 2.49,
+          "level": "偏内向",
+          "summary": "享受独处, 在小圈子中获得能量",
+          "detail": "你倾向于在独处或小范围交往中恢复能量, 思考多于表达, 在喧闹的社交场合容易疲惫。这并非「社交障碍」, 而是一种健康的能量调节方式。\n\n内向者在深度思考、专注工作、深度倾听、写作、研究等领域常有显著优势。建议: 主动安排独处时间, 把社交视为有限资源而非义务; 利用书面表达发挥优势。"
+        },
+        {
+          "min": 2.5, "max": 3.5,
+          "level": "中等 (中间型)",
+          "summary": "既能社交也能独处, 灵活切换",
+          "detail": "你属于「中间型」 (ambivert), 既能在社交场合中获得乐趣, 也能在独处中获得能量。研究表明, 中间型在销售、咨询、教练等需要灵活角色切换的工作中表现尤为出色。"
+        },
+        {
+          "min": 3.51, "max": 5,
+          "level": "偏外向",
+          "summary": "活力充沛, 在社交中获得能量",
+          "detail": "你享受与人相处, 在群体中感到充电, 倾向于积极的情绪和主动的表达。外向者在领导、销售、公关、教学、表演等需要持续与人互动的角色中常有优势。\n\n可能的挑战: 高外向者可能在需要独处反思的工作 (如深度写作、研究) 中容易分心, 也可能在做决策时过快表态而欠思考。"
+        }
+      ],
+      "A": [
+        {
+          "min": 1, "max": 2.49,
+          "level": "偏低",
+          "summary": "直率、独立, 重视竞争与原则",
+          "detail": "你倾向于直接表达自己的看法, 重视独立判断和竞争, 不太在意他人的好感。这种特质让你在谈判、批评性思考、需要坚持原则的场合 (如审计、法律、风险管理) 表现出色。\n\n挑战是: 可能被他人感受为「冷漠」「强势」, 在需要团队和谐的场景中容易引发摩擦。建议: 在沟通时主动加入认可与共情的表达。"
+        },
+        {
+          "min": 2.5, "max": 3.5,
+          "level": "中等",
+          "summary": "在合作与坚持自我间保持平衡",
+          "detail": "你既能在需要时合作配合, 也能在原则问题上坚持立场。这种平衡使你在多元化的团队中都能找到合适位置。"
+        },
+        {
+          "min": 3.51, "max": 5,
+          "level": "偏高",
+          "summary": "温暖、信任、合作型",
+          "detail": "你天性体贴、富有同理心、乐于合作。这种特质让你成为团队中的「润滑剂」, 在助人、咨询、护理、教育等领域有显著优势。\n\n可能的挑战: 高宜人性者容易因为不愿冲突而过度妥协、忽视自己的需求, 在职场谈判和设立边界上较吃力。建议: 学习「温和但坚定」的沟通方式, 区分「友善」与「讨好」。"
+        }
+      ],
+      "N": [
+        {
+          "min": 1, "max": 2.49,
+          "level": "情绪稳定",
+          "summary": "情绪平稳, 抗压能力强",
+          "detail": "你情绪稳定, 在压力下保持镇定, 不容易被负面情绪长时间影响。这种特质让你在高压环境 (急救、紧急响应、决策岗位) 表现出色。\n\n稍需留意的是: 极低神经质的人有时对自己和他人的情绪信号敏感度较低, 可能错过早期的压力信号; 在亲密关系中, 适度的情绪表达也是连接的来源。"
+        },
+        {
+          "min": 2.5, "max": 3.5,
+          "level": "中等",
+          "summary": "情绪起伏适中, 与多数人相近",
+          "detail": "你的情绪反应在正常范围内, 既不过分平静, 也不过分激烈。在压力下会有正常的情绪波动, 但通常能恢复。"
+        },
+        {
+          "min": 3.51, "max": 5,
+          "level": "偏高",
+          "summary": "情绪敏感, 容易受压力影响",
+          "detail": "你的情绪反应较强烈、对压力敏感, 在不顺利时容易感到焦虑、低落或紧张。这种敏感性并非缺陷——它常常伴随更细腻的感受力、更高的共情能力和更深的艺术敏感性。\n\n挑战在于压力管理。建议:\n• 学习并坚持使用情绪调节技术 (正念、呼吸、CBT)\n• 把基础生活照顾好 (睡眠、运动、饮食), 它们对高神经质者的情绪影响尤其大\n• 选择压力可控、节奏可预期的工作环境\n• 当情绪持续低落或焦虑超过两周时, 主动寻求专业帮助"
+        }
+      ]
+    }
+  }
+}

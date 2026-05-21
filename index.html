@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>心镜 · 专业心理测评</title>
+  <meta name="description" content="提供 MBTI、大五人格、PHQ-9 等经典心理量表的在线测评与权威解读" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">心</span>
+        <span class="logo-text">心镜<span class="logo-sub">PsyMirror</span></span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link active">量表</a>
+        <a href="docs/references.md" class="nav-link">文献来源</a>
+        <a href="#about" class="nav-link">关于</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">用科学的尺子, 认识自己</h1>
+        <p class="hero-subtitle">汇集 MBTI、大五人格、PHQ-9、GAD-7、霍兰德职业兴趣等经典心理量表, 提供基于学术文献的专业解读</p>
+        <div class="hero-meta">
+          <span class="badge"><span class="badge-dot"></span>所有数据本地存储, 不上传</span>
+          <span class="badge"><span class="badge-dot"></span>结果可选 AI 深度分析</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="scales-section container" id="scales">
+      <div class="section-header">
+        <h2>选择一个量表开始</h2>
+        <p class="muted">点击卡片查看量表详情并开始测试</p>
+      </div>
+      <div id="scale-list" class="scale-grid">
+        <div class="loading">加载中...</div>
+      </div>
+    </section>
+
+    <section class="about-section container" id="about">
+      <h2>关于本站</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>专业来源</h3>
+          <p>每一个量表的题目、计分方法和解读阈值都基于公开发表的学术文献, 详见 <a href="docs/references.md">文献来源</a>。</p>
+        </div>
+        <div class="about-card">
+          <h3>隐私优先</h3>
+          <p>所有答题与计算都在你的浏览器内完成, 题目作答和结果数据不会上传到服务器, 关闭页面后亦不保留 (除非你选择本地存档)。</p>
+        </div>
+        <div class="about-card">
+          <h3>免责声明</h3>
+          <p>本站提供的测评<strong>不能替代</strong>专业的心理评估和临床诊断。若你正经历持续的情绪困扰或心理健康问题, 请咨询专业心理咨询师或精神科医生。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>心镜 · 仅供心理学知识与自我探索之用 · 不作临床诊断依据</p>
+      <p class="muted">如遇心理危机, 请拨打 <a href="tel:96011">96011</a> (北京心理援助热线) 或 <a href="tel:4001619995">400-161-9995</a> (全国心理援助热线)</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

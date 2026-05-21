@@ -1,0 +1,100 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-05-20",
+  "categories": [
+    { "id": "personality", "label": "人格特质", "order": 1 },
+    { "id": "mental-health", "label": "情绪与心理健康", "order": 2 },
+    { "id": "career", "label": "职业与发展", "order": 3 },
+    { "id": "leadership", "label": "领导力与团队", "order": 4 }
+  ],
+  "scales": [
+    {
+      "id": "mbti",
+      "name": "MBTI 性格类型测试 (简版)",
+      "shortName": "MBTI",
+      "tagline": "28 题快速版, 探索你的 16 型人格倾向",
+      "category": "personality",
+      "questionCount": 28,
+      "estimatedMinutes": 6,
+      "featured": true
+    },
+    {
+      "id": "mbti-pro",
+      "name": "MBTI 性格类型测试 (详尽版)",
+      "shortName": "MBTI Pro",
+      "tagline": "60 题深度测量 + 认知功能堆栈 + 工作 / 关系 / 成长全维度解读",
+      "category": "personality",
+      "questionCount": 60,
+      "estimatedMinutes": 14,
+      "featured": true
+    },
+    {
+      "id": "bfi",
+      "name": "大五人格量表 BFI-44",
+      "shortName": "BFI-44",
+      "tagline": "学术界最受认可的人格模型, 测量五大特质",
+      "category": "personality",
+      "questionCount": 44,
+      "estimatedMinutes": 10,
+      "featured": true
+    },
+    {
+      "id": "phq9",
+      "name": "PHQ-9 抑郁症筛查量表",
+      "shortName": "PHQ-9",
+      "tagline": "国际广泛使用的抑郁症初筛工具",
+      "category": "mental-health",
+      "questionCount": 9,
+      "estimatedMinutes": 3,
+      "featured": true
+    },
+    {
+      "id": "gad7",
+      "name": "GAD-7 广泛性焦虑量表",
+      "shortName": "GAD-7",
+      "tagline": "评估近两周焦虑症状严重程度",
+      "category": "mental-health",
+      "questionCount": 7,
+      "estimatedMinutes": 2,
+      "featured": true
+    },
+    {
+      "id": "sds",
+      "name": "SDS 抑郁自评量表",
+      "shortName": "SDS",
+      "tagline": "Zung 编制, 国内临床最常用的抑郁自评工具",
+      "category": "mental-health",
+      "questionCount": 20,
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "sas",
+      "name": "SAS 焦虑自评量表",
+      "shortName": "SAS",
+      "tagline": "Zung 编制, 国内临床最常用的焦虑自评工具",
+      "category": "mental-health",
+      "questionCount": 20,
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "holland",
+      "name": "霍兰德职业兴趣测验",
+      "shortName": "Holland",
+      "tagline": "RIASEC 六维度职业兴趣测评, 帮助职业规划",
+      "category": "career",
+      "questionCount": 60,
+      "estimatedMinutes": 12,
+      "featured": true
+    },
+    {
+      "id": "4d",
+      "name": "4D 领导力风格测评",
+      "shortName": "4D Leadership",
+      "tagline": "NASA 团队效能模型, 识别你的主导领导风格",
+      "category": "leadership",
+      "questionCount": 32,
+      "estimatedMinutes": 8,
+      "featured": true
+    }
+  ]
+}
